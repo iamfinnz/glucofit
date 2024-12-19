@@ -53,12 +53,128 @@
     <string name="upload">Upload</string>
     <string name="your_acne_classified_as">Your acne classified as:</string>
     <string name="detail_article">Detail Article</string>
-    <string name="descript_blackhead_scan"><b>Penyebab :</b> Tidak menjaga kebersihan wajah\n<b>Solusi :</b> Menggunakan produk yang mengandung asam salisilat dan asam glikolat</string>
-    <string name="descript_postules_scan"><b>Penyebab :</b> Komedo yang mengalami peradangan\n<b>Solusi :</b> Menggunakan acne patch</string>
-    <string name="descript_nodules_scan"><b>Penyebab :</b> Penyumbatan pori akibat penumpukan sel kulit mati\n<b>Solusi :</b> Ada baiknya berkonsultasi dengan dokter</string>
     <string name="getting_know_acne_type">Artikel Untuk Kamu</string>
     <string name="blackhead_atau">Blackhead atau</string>
     <string name="see_more">Baca Artikel</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pencegahan_diabetes_remaja">
+    <![CDATA[
+    <p>Pencegahan diabetes pada remaja dapat dilakukan dengan beberapa strategi yang disarankan oleh Organisasi Kesehatan Dunia (WHO):</p>
+    <p><b>a) Makanan Seimbang dan Aktivitas Fisik</b></p>
+    <p>&nbsp;&nbsp;(1) Makanan Seimbang: Konsumsi makanan seimbang yang rendah gula dan lemak jenuh sangat penting untuk mengurangi risiko diabetes. Kalangan remaja dapat memilih makanan yang kaya serat seperti buah-buahan, sayuran, dan biji-bijian.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2) Aktivitas Fisik: Melakukan aktivitas fisik secara teratur adalah salah satu cara efektif untuk mencegah diabetes. Setidaknya 30 menit setiap hari sudah cukup untuk membantu menjaga berat badan ideal dan meningkatkan sensitivitas insulin.</p>
+    <p><b>b) Menghindari Risiko Berlebihan</b></p>
+    <p>&nbsp;&nbsp;(1) Berat Badan Ideal: Menjaga berat badan ideal merupakan faktor utama dalam pencegahan diabetes. Remaja yang memiliki berat badan di atas rata-rata lebih rentan terhadap penyakit ini karena insulin pada tubuh tidak dapat menyerap gula dengan efektif.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2) Hindari Asap Rokok: Menghindari asap rokok juga sangat penting karena merokok tidak hanya menyebabkan peningkatan tekanan darah tetapi juga membuat tubuh kurang responsif terhadap insulin.</p>
+    <p><br/>Berbagai penelitian telah mengeksplorasi strategi pencegahan yang berfokus pada modifikasi gaya hidup, intervensi edukasi, dan keterlibatan masyarakat. Tinjauan literatur ini mensintesis temuan dari artikel penulisan terbaru yang membahas pencegahan diabetes pada remaja.</p>
+    <p><b>a) Aktivitas Fisik dan Pola Makan Sehat</b></p>
+    <p>&nbsp;&nbsp;&nbsp;Remaja yang melakukan aktivitas fisik secara teratur memiliki risiko terkena diabetes yang jauh lebih rendah dibandingkan dengan mereka yang tidak. Secara khusus, kalangan remaja yang tidak melakukan aktivitas fisik memiliki risiko 3,198 kali lebih tinggi terkena diabetes melitus. Oleh karena itu pilihan makanan, terutama konsumsi makanan olahan, juga berkontribusi terhadap peningkatan faktor risiko diabetes.</p>
+    <p><b>b) Deteksi dan Pemantauan Dini</b></p>
+    <p>&nbsp;&nbsp;&nbsp;Deteksi dini melalui pemantauan gula darah secara teratur merupakan langkah pencegahan yang sangat penting banyak remaja yang tidak menyadari status kesehatan mereka terkait risiko diabetes. Konsultasi kesehatan dan pemeriksaan gula darah secara teratur dapat memfasilitasi identifikasi dini kondisi prediabetes, sehingga memungkinkan intervensi tepat waktu. Sebagai kesimpulan, strategi pencegahan yang efektif untuk diabetes pada remaja harus mencakup pendekatan multi-segi yang mencakup promosi aktivitas fisik, kebiasaan makan sehat, inisiatif pendidikan, keterlibatan masyarakat, dan praktik deteksi dini. Penulisan lanjutan sangat penting untuk menyempurnakan strategi ini dan mengatasi tantangan yang dihadapi dalam mengelola kesehatan mereka.
+    ]]>
+    </string>
+    <string name="pencegahan_diabetes_pediabetes">
+    <![CDATA[
+    <p><b>a) Pencegahan Diabetes</b><br>
+    &nbsp;Menurut WHO dan Kementerian Kesehatan Republik Indonesia (Kemenkes), pencegahan diabetes pada remaja dengan status pre-diabetes melibatkan beberapa strategi utama:</p>
+    <p>&nbsp;&nbsp;(1) Strategi Pencegahan Menurut WHO<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;WHO merekomendasikan beberapa langkah untuk mencegah diabetes melitus tipe 2, terutama pada mereka yang memiliki risiko tinggi:</p>
+    <p>&nbsp;&nbsp;&nbsp;(a) Penurunan Berat Badan: Penurunan berat badan sekitar 5–10% dapat sangat efektif dalam mencegah atau memperlambat kemunculan diabetes.<br>
+    &nbsp;&nbsp;&nbsp;(b) Aktivitas Fisik: Meningkatkan aktivitas fisik hingga 150 menit per minggu, dibagi menjadi 3–4 kali seminggu, dapat memperbaiki resistensi insulin dan meningkatkan kadar HDL (kolesterol baik).<br>
+    &nbsp;&nbsp;&nbsp;(c) Pola Makan Sehat: Mengonsumsi karbohidrat kompleks, sedikit lemak jenuh, dan tinggi serat larut dapat membantu menjaga kontrol gula darah. Asupan kalori harus ditargetkan untuk mencapai berat badan ideal.<br>
+    &nbsp;&nbsp;&nbsp;(d) Edukasi Kesehatan: Mengikuti pendidikan kesehatan yang tepat dapat membantu pencegahan terjadinya penyakit diabetes melitus dan komplikasinya. Eduksi yang efektif dapat meningkatkan kesadaran dan perilaku sehat remaja.</p>
+    <p><br/>&nbsp;&nbsp;(2) Strategi Pencegahan Menurut Kemenkes<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Kemenkes juga menekankan beberapa hal penting dalam pencegahan diabetes melitus tipe 2 pada remaja:</p>
+    <p>&nbsp;&nbsp;&nbsp;(a) Mencapai Berat Badan Ideal: Salah satu upaya pencegahan primer adalah dengan mencapai berat badan ideal. Studi menunjukkan bahwa penurunan berat badan sekitar 6,5% setelah 4 minggu diet rendah kalori dapat menurunkan tekanan darah dan gula darah.<br>
+    &nbsp;&nbsp;&nbsp;(b) Konsumsi Buah dan Sayur: Mengonsumsi buah dan sayur secara teratur dapat membantu mencegah diabetes karena keduanya memiliki banyak manfaat, termasuk mengurangi risiko kelebihan berat badan dan resistensi insulin.<br>
+    &nbsp;&nbsp;(c) Aktif Berolahraga: Biasakan untuk berolahraga setidaknya 30 menit sehari untuk mencegah kelebihan berat badan dan mengurangi risiko diabetes. Berolahraga juga dapat menurunkan kadar gula darah dan menekan resistensi insulin.<br>
+    &nbsp;&nbsp;&nbsp;(d) Pilihan Makanan dengan Indeks Glikemik Rendah/Sedang: Pilih makanan yang memiliki indeks glikemik rendah atau sedang untuk menghindari lonjakan gula darah yang tajam. Makanan dengan indeks glikemik tinggi seperti minuman manis dan bersoda dapat menyebabkan kenaikan gula darah yang cepat.</p>
+    <p><b><br>b) Monitor Kadar Gula Darah</b><br>
+    &nbsp;Aktivitas fisik, gaya hidup tidak sehat, makanan siap saji, ketidakpedulian melakukan pemeriksaan kadar gula darah secara rutin membuat kadar gula darah tidak terkontrol sehingga resiko diabetes melitus berkembang menjadi fenomena di kalangan Remaja.</p>
+    <p>&nbsp;Menurut Kementerian Kesehatan Republik Indonesia (KEMENKES), pemantauan gula darah secara berkala sangat penting bagi remaja untuk mencegah dan mengendalikan diabetes. Berikut beberapa aspek penting untuk remaja dalam mengendalikan kadar gula darah:</p>
+    <p>&nbsp;&nbsp;(1) Deteksi Dini: Pemeriksaan kadar gula darah secara berkala dapat membantu mendeteksi diabetes dini, terutama pada remaja yang rentan terhadap diabetes tipe 2. Hal ini dapat mencegah komplikasi yang tidak diinginkan dan memastikan kontrol kadar gula darah yang tepat.<br>
+    &nbsp;&nbsp;(2) Gejala Awal: Gejala awal diabetes pada remaja mungkin tidak tampak langsung, tetapi dapat ditandai dengan kadar gula darah yang tinggi meski belum cukup tinggi untuk diklasifikasikan sebagai diabetes. Ini disebut pra-diabetes, yang merupakan alarm untuk menjaga pola makan dan lifestyle.<br>
+    &nbsp;&nbsp;(3) Pola Makan dan Lifestyle: Untuk mencegah diabetes, remaja harus mempertahankan berat badan ideal, konsumsi buah dan sayur yang cukup, dan aktif berolahraga. Pola makan yang seimbang dan lifestyle yang sehat dapat membantu menghindari risiko tinggi kadar kolesterol darah dan obesitas, faktor-faktor yang meningkatkan risiko diabetes tipe 2.<br>
+    &nbsp;&nbsp;(4) Teknologi Pemantauan Gula Darah: Teknologi digitalisasi juga dipromosikan untuk memantau kadar gula darah secara real-time, terutama bagi penderita diabetes tipe 1 maupun tipe 2. CGM dapat memberikan informasi yang lebih detail tentang fluktuasi kadar gula darah dan membantu dalam pengobatan yang lebih efektif.</p>
+    ]]>
+    </string>
+    <string name="diabetes_remaja">
+    <![CDATA[
+    <p>&nbsp;&nbsp;Remaja dengan diabetes memiliki beberapa manfaat bila mereka pergi ke pelayanan kesehatan untuk mencegah komplikasi, yaitu:</p>
+    <p>&nbsp;&nbsp;&nbsp;a) Pengendalian Gula Darah: Mengontrol gula darah secara efektif dapat mencegah komplikasi serius seperti gangguan kardiovaskular, kerusakan saraf, masalah penglihatan, dan masalah ginjal.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;b) Edukasi dan Strategi Pengelolaan: Pelayanan kesehatan dapat memberikan edukasi yang mendalam tentang cara mengelola diabetes, termasuk strategi nutrisi dan intervensi gizi yang optimal untuk mencapai kontrol glikemik.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;c) Rajin ke Pelayanan Kesehatan: Semakin tinggi kepatuhan dalam mengonsumsi obat, yang pada gilirannya dapat mengurangi risiko komplikasi.</p>
+    <p>&nbsp;d) Mendapatkan Dukungan Profesional: Tim medis dapat memberikan dukungan profesional yang relevan, mulai dari diagnosis hingga pengobatan yang sesuai, serta evaluasi terus-menerus untuk menyesuaikan pengobatan sesuai perubahan kondisi kesehatan.</p>
+    <p>&nbsp;&nbsp;e) Pencegahan Komplikasi Jangka Panjang: Pengetahuan tentang cara mengelola diabetes dan faktor risiko membantu mencegah komplikasi jangka panjang, sehingga remaja dengan diabetes dapat menjaga kualitas hidup mereka.</p>
+    <p>&nbsp;&nbsp; Dengan demikian, pergi ke pelayanan kesehatan merupakan langkah penting bagi remaja dengan diabetes untuk mencegah komplikasi dan meningkatkan kualitas hidup mereka.</p>
+    ]]>
+    </string>
+    <string name="pencegahan_diabetes_dewasa">
+    <![CDATA[
+    <p>&nbsp;&nbsp;Intervensi Gaya Hidup yang baik menunjukkan bahwa perubahan gaya hidup yang mencakup diet sehat dan peningkatan aktivitas fisik dapat secara signifikan mengurangi risiko diabetes tipe 2.</p>
+    <p>&nbsp;&nbsp;a) Program Diabetes Prevention Program (DPP) menunjukkan bahwa intervensi gaya hidup intensif dapat mengurangi risiko pengembangan diabetes tipe 2 hingga 58% dalam tiga tahun. Tujuan utama dari intervensi ini adalah penurunan berat badan minimal 7% dan aktivitas fisik selama 150 menit per minggu.</p>
+    <p>&nbsp;&nbsp;b) Diet Sehat: Pola makan yang kaya serat (seperti buah-buahan, sayuran, dan biji-bijian) dan rendah lemak jenuh sangat dianjurkan. Mengurangi asupan kalori juga penting, terutama bagi mereka yang kelebihan berat badan.</p>
+    <p>&nbsp;&nbsp;&nbsp;c) Aktivitas Fisik: Aktivitas fisik moderat, seperti berjalan cepat, telah terbukti meningkatkan sensitivitas insulin dan mengurangi lemak perut. Penulisan menunjukkan bahwa melakukan aktivitas fisik secara teratur dapat mengurangi insiden diabetes hingga 44%, bahkan tanpa mencapai target penurunan berat badan.</p>
+    <p>&nbsp;d) Pemeriksaan gula darah secara rutin dan konseling kesehatan juga merupakan komponen penting dalam pencegahan diabetes.</p>
+    <p>&nbsp;&nbsp;e) Deteksi Dini: Melalui pemeriksaan rutin, individu dapat mengetahui faktor risiko diabetes lebih awal, memungkinkan tindakan pencegahan yang lebih efektif.</p>
+    <p>&nbsp;&nbsp;Pencegahan diabetes pada orang dewasa dapat dicapai melalui kombinasi perubahan gaya hidup yang berkelanjutan, pemeriksaan kesehatan rutin, dan edukasi masyarakat. Intervensi gaya hidup seperti diet sehat dan aktivitas fisik terbukti efektif dalam mengurangi risiko pengembangan diabetes tipe 2. Oleh karena itu, penting bagi individu untuk menerapkan kebiasaan sehat ini sebagai bagian dari upaya pencegahan jangka panjang.</p>
+    ]]>
+    </string>
+    <string name="pencegahan_diabetes_dewasa_prediabetes">
+    <![CDATA[
+    <p><b>a) Pencegahan Diabetes</b><br>
+    &nbsp;&nbsp;Prediabetes adalah kondisi di mana kadar gula darah seseorang lebih tinggi dari normal tetapi belum cukup tinggi untuk dikategorikan sebagai diabetes. Menurut data, prediabetes dapat berkembang menjadi diabetes tipe 2 jika tidak ditangani dengan baik. Oleh karena itu, pencegahan sangat penting, terutama bagi orang dewasa yang berisiko. Beberapa faktor risiko yang dapat meningkatkan kemungkinan seseorang mengalami prediabetes meliputi:</p>
+    <p>&nbsp;(1) Obesitas: Kelebihan berat badan atau obesitas merupakan faktor utama yang dapat menyebabkan resistensi insulin.<br>
+    &nbsp;  (2) Usia: Risiko meningkat seiring bertambahnya usia, terutama setelah usia 45 tahun.<br>
+    &nbsp;   (3) Riwayat Keluarga: Memiliki anggota keluarga dengan diabetes juga meningkatkan risiko.<br>
+    &nbsp; (4) Gaya Hidup Tidak Aktif: Kurangnya aktivitas fisik berkontribusi pada pengembangan prediabetes.</p>
+    <p>&nbsp;&nbsp;Berdasarkan rekomendasi dari WHO dan Kementerian Kesehatan (Kemenkes), berikut adalah langkah-langkah yang dapat diambil untuk mencegah perkembangan prediabetes menjadi diabetes:</p>
+    <p>&nbsp;&nbsp;(1) Menjaga Berat Badan Ideal: Mengurangi berat badan sebanyak 5-7% dari total berat badan dapat menurunkan risiko diabetes hingga 58%.<br>
+    &nbsp;(2) Rutin Berolahraga: Aktivitas fisik minimal 30 menit sehari, seperti berjalan kaki atau bersepeda, sangat dianjurkan untuk membantu mengontrol kadar gula darah dan meningkatkan sensitivitas insulin.<br>
+    &nbsp;(3) Pola Makan Sehat: Mengonsumsi makanan bergizi seimbang yang kaya serat, seperti sayuran, buah-buahan, dan biji-bijian, sambil menghindari makanan tinggi gula dan lemak jenuh.<br>
+    &nbsp;(4) Mengelola Stres: Stres dapat memicu peningkatan kadar gula darah; oleh karena itu, teknik relaksasi seperti meditasi atau yoga bisa membantu.<br>
+    &nbsp;&nbsp;&nbsp;(5) Berhenti Merokok dan Menghindari Alkohol: Kebiasaan merokok dan konsumsi alkohol berlebihan dapat meningkatkan risiko diabetes; berhenti merokok dan mengurangi asupan alkohol sangat dianjurkan.<br>
+    &nbsp;&nbsp;(6) Pemeriksaan Kadar Gula Darah Secara Rutin: Melakukan pemeriksaan gula darah secara berkala untuk memantau kondisi kesehatan dan mendeteksi dini jika terjadi perubahan.</p>
+    <br><p><b>b) Monitor Kadar Gula Darah</b></p>
+    <p>&nbsp;&nbsp;(1) Pencegahan Komplikasi:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;(a) Deteksi Awal: Melakukan pemeriksaan deteksi awal secara teratur dapat membantu mendeteksi gangguan metabolisme glukosa sebelum terjadinya komplikasi serius.<br>
+    &nbsp;&nbsp;(b) Manajemen Risiko: Identifikasi dan manajemen risiko individu, seperti hipertensi, kolesterol tinggi, dan stres, dapat membantu mengurangi risiko perkembangan diabetes jenis 2.</p>
+    <p>Organisasi Kesehatan Dunia merekomendasikan penggunaan kriteria American Diabetes Association (ADA) untuk diagnosis diabetes mellitus. Namun, untuk prediabetes, WHO merekomendasikan penggunaan kriteria berikut:<br>
+    &nbsp;&nbsp;&nbsp;• Impaired Fasting Glucose: Kadar gula darah puasa antara 100-125 mg/dL.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;• Impaired Glucose Tolerance: Kadar gula darah sewaktu antara 140-199 mg/dL.</p>
+    <p>&nbsp;&nbsp;Dengan mengikuti rekomendasi tersebut, penderita prediabetes dapat melakukan monitoran kadar gula darah secara aktif dan melakukan intervensi preventif untuk mencegah perkembangan diabetes 2. Jika Anda ingin memantau kadar gula darah sendiri, pastikan Anda melakukan pemeriksaan rutin dengan metode yang tepat dan mengikuti pola hidup sehat yang direkomendasikan. Konsultasilah dengan ahli medis jika Anda memiliki pertanyaan atau keraguan tentang bagaimana menjaga kadar gula darah Anda.</p>
+    <p>&nbsp;&nbsp;(2) Monitor Kadar Gula Darah:<br>
+    &nbsp;&nbsp;  Adapun bagi orang dewasa yang sudah mengalami prediabetes dianjurkan untuk memonitor kadar gula darah. Monitor kadar gula darah bagi orang dewasa memiliki beberapa manfaat, yang direkomendasikan oleh Kementerian Kesehatan Republik Indonesia (Kemenkes) dan Organisasi Kesehatan Dunia (WHO) adalah Langkah-Langkah Monitoring:</p>
+    <p>&nbsp;&nbsp;(a) Pemeriksaan Rutin:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Glukosa Darah Puasa: Pemeriksaan kadar gula darah puasa membantu mengevaluasi apakah kadar gula darah Anda telah meningkat secara signifikan. Hasil yang normal biasanya berkisar antara 70-99 mg/dL, namun pada prediabetes, nilai ini dapat berkisar antara 100-125 mg/dL.<br>
+    Glukosa Darah 2 Jam Setelah Mengkonsumsi Glukosa: Ujian Toleransi Glukosa (UTG) adalah tes yang sangat sensitif untuk mendeteksi intoleransi glukosa. Nilainya biasanya berkisar antara 140-199 mg/dL pada prediabetes.<br>
+    HbA1c: Pengukuran HbA1c memberikan gambaran umum tentang kadar gula darah rata-rata selama beberapa bulan. Nilai normal biasanya ≤ 5,7%, namun pada prediabetes, nilainya dapat berkisar antara 5,7%-6,4 %.</p>
+    <p>&nbsp;&nbsp;(b) Pola Hidup Sehat:<br>
+    &nbsp;&nbsp;• Aktivitas Fisik: Melakukan aktivitas fisik secara teratur dapat membantu meningkatkan sensitivitas insulin dan mengurangi kadar gula darah.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;  • Pengaturan Diet: Memilih diet yang seimbang dan rendah lemak dapat membantu mengontrol kadar gula darah. Penting untuk menghindari konsumsi gula tambahan dan alkohol.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;  • Penurunan Berat Badan: Jika Anda overweight atau obesitas, penurunan berat badan dapat membantu mengurangi risiko perkembangan diabetes jenis 2.</p>
+    ]]>
+    </string>
+    <string name="konsultasi_diabetes_dewasa">
+    <![CDATA[
+    <p>Konsultasi ke pelayanan kesehatan sangat dianjurkan untuk meningkatkan pengelolaan penyakit dan mencegah komplikasi. Berikut adalah beberapa manfaat dan anjuran terkait konsultasi ini:</p>
+    <p>&nbsp;a) Pencegahan Komplikasi: Kunjungan rutin ke fasilitas kesehatan dapat membantu mendeteksi dan mencegah komplikasi diabetes, seperti kerusakan pada ginjal, jantung, dan saraf.</p>
+    <p>&nbsp;b) Menurut Kementerian Kesehatan Republik Indonesia (Kemenkes), edukasi yang terstruktur mengenai pengelolaan diabetes, termasuk pemantauan kadar gula darah, manajemen diet, dan aktivitas fisik, sangat penting untuk keberhasilan pengobatan. Program edukasi ini juga memberikan dukungan psikososial yang membantu pasien dalam menghadapi tantangan penyakit.</p>
+    <p>&nbsp;1. Pengelolaan Gaya Hidup: Konsultasi dengan tenaga kesehatan memungkinkan pasien untuk mendapatkan informasi tentang perubahan gaya hidup yang diperlukan, seperti diet sehat dan aktivitas fisik yang sesuai. Ini dapat membantu dalam mengendalikan kadar gula darah dan meningkatkan kualitas hidup.</p>
+    <p>&nbsp;2. Monitoring Berkala: Melalui konsultasi, pasien dapat melakukan pemantauan berkala terhadap kondisi kesehatan mereka, termasuk pemeriksaan HbA1C dan penyesuaian terapi jika diperlukan.</p>
+    <p>&nbsp;3. Menurut Kementerian Kesehatan Republik Indonesia (Kemenkes), akses ke terapi nutrisi atau ahli gizi dapat memberikan panduan tentang nutrisi yang tepat, termasuk penghitungan karbohidrat dan pilihan makanan yang sehat untuk mengontrol gula darah.</p>
+    <p><br><b>Anjuran untuk Penderita Diabetes:</b></p>
+    <p>&nbsp;(1) Kunjungan Rutin: Disarankan agar penderita diabetes melakukan kunjungan rutin ke fasilitas kesehatan setidaknya sekali dalam tiga bulan untuk evaluasi kondisi dan penyesuaian terapi.</p>
+    <p>&nbsp;(2) Program Edukasi Mandiri: Pasien dianjurkan untuk mengikuti program edukasi mandiri yang dapat meningkatkan pengetahuan dan keterampilan dalam mengelola diabetes.</p>
+    <p>&nbsp;(3) Pemantauan Kesehatan Keluarga: Peran keluarga sangat penting dalam mendukung pasien diabetes, baik dalam hal pengelolaan diet maupun dukungan emosional.</p>
+    <p>&nbsp;Dengan mengikuti anjuran ini dan memanfaatkan layanan kesehatan secara optimal, penderita diabetes dapat meningkatkan kualitas hidup mereka dan mengurangi risiko komplikasi serius.</p>
+    ]]>
+    </string>
+
+
+
+
+
+
 </resources>

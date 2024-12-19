@@ -34,4 +34,13 @@
         android:textSize="@dimen/h6"
         android:layout_marginTop="@dimen/normal_75"/>
 
+    <Button
+        android:id="@+id/btn_artikel_educasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artikel Edukasi"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/normal_100"/>
+
 </LinearLayout>

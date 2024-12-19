@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.glucofit.R
 import com.example.glucofit.databinding.ActivityCekBinding
+import com.example.glucofit.presentation.edukasi.EdukasiActivity
 import com.example.glucofit.presentation.main.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -184,20 +185,139 @@ class CekActivity : AppCompatActivity() {
         }
     }
 
+    private fun calculateBMI(beratBadan: Float, tinggiBadanCm: Float): Pair<Float, String> {
+        // Ubah tinggi badan dari cm ke m
+        val tinggiBadanM = tinggiBadanCm / 100
+        // Hitung IMT
+        val imt = beratBadan / (tinggiBadanM * tinggiBadanM)
+        val kategoriIMT = when {
+            imt < 18.5 -> "Kurus"
+            imt in 18.5..22.9 -> "Normal"
+            imt in 23.0..29.9 -> "Prediabetes"
+            else -> "Diabetes"
+        }
+        return Pair(imt, kategoriIMT)
+    }
+
+    private fun determineActivityCategory(aktivitasFisik: String): String {
+        return when (aktivitasFisik) {
+            "2-3 kali seminggu", "> 2-3 kali seminggu" -> "Normal"
+            "< 2-3 kali seminggu" -> "Prediabetes"
+            "Tidak Berolahraga" -> "Diabetes"
+            else -> "Kategori tidak diketahui"
+        }
+    }
+
+    private fun determineLastMealCategory(jamTerakhirMakan: String): String {
+        return when (jamTerakhirMakan) {
+            "< 2 jam", "2-8 jam" -> "Gula Darah Sewaktu"
+            "> 8 jam" -> "Gula Darah Puasa"
+            else -> "Kategori tidak diketahui"
+        }
+    }
+
+    private fun determineBloodSugarResult(kategoriJamTerakhirMakan: String, kadarGulaDarah: Float): String {
+        return when (kategoriJamTerakhirMakan) {
+            "Gula Darah Sewaktu" -> {
+                when {
+                    kadarGulaDarah < 140 -> "Normal"
+                    kadarGulaDarah in 140.0..199.9 -> "Prediabetes"
+                    kadarGulaDarah >= 200 -> "Diabetes"
+                    else -> "Kadar gula darah tidak valid"
+                }
+            }
+            "Gula Darah Puasa" -> {
+                when {
+                    kadarGulaDarah in 70.0..99.9 -> "Normal"
+                    kadarGulaDarah in 100.0..125.9 -> "Prediabetes"
+                    kadarGulaDarah >= 126 -> "Diabetes"
+                    else -> "Kadar gula darah tidak valid"
+                }
+            }
+            else -> "Kategori tidak diketahui"
+        }
+    }
+
+    private fun determineFinalResult(
+        kategoriJamTerakhirMakan: String,
+        hasilGulaDarah: String,
+        kategoriIMT: String,
+        kategoriAktivitas: String
+    ): String {
+        return when (kategoriJamTerakhirMakan) {
+            "Gula Darah Sewaktu" -> {
+                when {
+                    hasilGulaDarah == "Normal" && kategoriIMT == "Normal" && kategoriAktivitas == "Normal" -> "Normal"
+                    hasilGulaDarah == "Normal" && (kategoriIMT == "Normal" || kategoriIMT == "Prediabetes" || kategoriIMT == "Diabetes") &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Normal (Memiliki Resiko Prediabetes)"
+                    hasilGulaDarah == "Prediabetes" && (kategoriIMT == "Normal" || kategoriIMT == "Prediabetes") &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Prediabetes"
+                    hasilGulaDarah == "Prediabetes" && kategoriIMT == "Diabetes" &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Prediabetes (Resiko Tinggi Diabetes Melitus)"
+                    hasilGulaDarah == "Diabetes" && (kategoriIMT == "Normal" || kategoriIMT == "Prediabetes" || kategoriIMT == "Diabetes") &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Diabetes"
+                    else -> "Hasil tidak valid"
+                }
+            }
+            "Gula Darah Puasa" -> {
+                when {
+                    hasilGulaDarah == "Normal" && kategoriIMT == "Normal" && kategoriAktivitas == "Normal" -> "Normal"
+                    hasilGulaDarah == "Normal" && (kategoriIMT == "Normal" || kategoriIMT == "Prediabetes" || kategoriIMT == "Diabetes") &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Normal (Memiliki Resiko Prediabetes)"
+                    hasilGulaDarah == "Prediabetes" && (kategoriIMT == "Normal" || kategoriIMT == "Prediabetes") &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Prediabetes"
+                    hasilGulaDarah == "Prediabetes" && kategoriIMT == "Diabetes" &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Prediabetes (Resiko Tinggi Diabetes Melitus)"
+                    hasilGulaDarah == "Diabetes" && (kategoriIMT == "Normal" || kategoriIMT == "Prediabetes" || kategoriIMT == "Diabetes") &&
+                            (kategoriAktivitas == "Normal" || kategoriAktivitas == "Prediabetes" || kategoriAktivitas == "Diabetes") -> "Diabetes"
+                    else -> "Hasil tidak valid"
+                }
+            }
+            else -> "Kategori tidak diketahui"
+        }
+    }
+
     private fun saveDataToFirebase(result: String) {
-        val bloodSugar = binding.etBloodSugar.text.toString()
-        val physicalActivity = binding.etPhysicalActivity.text.toString() // Ambil aktivitas fisik
-        val lastMealTime = binding.etLastMealTime.text.toString() // Ambil jam terakhir makan
-        val age = binding.etAge.text.toString().toIntOrNull() // Ambil umur
+        val namaLengkap = binding.etName.text.toString()
+        val jenisKelamin = binding.etGender.text.toString()
+        val umur = binding.etAge.text.toString().toIntOrNull()
+        val beratBadan = binding.etWeight.text.toString().toFloatOrNull()
+        val tinggiBadan = binding.etHeight.text.toString().toFloatOrNull() // Tinggi badan dalam cm
+        val kadarGulaDarah = binding.etBloodSugar.text.toString().toFloatOrNull()
+        val aktivitasFisik = binding.etPhysicalActivity.text.toString() // Ambil aktivitas fisik
+        val jamTerakhirMakan = binding.etLastMealTime.text.toString() // Ambil jam terakhir makan
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         val user = auth.currentUser
 
         // Kategorisasi umur
-        val ageCategory = when {
-            age != null && age in 9..18 -> "Remaja"
-            age != null && age in 19..60 -> "Dewasa"
+        val kategoriUmur = when {
+            umur != null && umur in 9..18 -> "Remaja"
+            umur != null && umur in 19..60 -> "Dewasa"
             else -> "Tidak Diketahui"
         }
+
+        // Hitung IMT jika berat dan tinggi badan valid
+        val (imt, kategoriIMT) = if (beratBadan != null && tinggiBadan != null) {
+            calculateBMI(beratBadan, tinggiBadan)
+        } else {
+            Pair(0f, "Data IMT tidak valid")
+        }
+
+        // Tentukan kategori aktivitas fisik
+        val kategoriAktivitas = determineActivityCategory(aktivitasFisik)
+
+        // Tentukan kategori jam terakhir makan
+        val kategoriJamTerakhirMakan = determineLastMealCategory(jamTerakhirMakan)
+
+        // Tentukan hasil gula darah
+        val hasilGulaDarah = if (kadarGulaDarah != null) {
+            determineBloodSugarResult(kategoriJamTerakhirMakan, kadarGulaDarah)
+        } else {
+            "Kadar gula darah tidak valid"
+        }
+
+        // Tentukan hasil akhir
+        val hasil = determineFinalResult(kategoriJamTerakhirMakan, hasilGulaDarah, kategoriIMT, kategoriAktivitas)
 
         if (user != null) {
             Log.d("CekActivity", "User is logged in")
@@ -206,13 +326,22 @@ class CekActivity : AppCompatActivity() {
             val userBloodSugarRef = database.child("bloodSugarData").child(userId).push()
 
             val bloodSugarData = mapOf(
-                "bloodSugar" to bloodSugar,
-                "date" to currentDate,
+                "namaLengkap" to namaLengkap,
+                "jenisKelamin" to jenisKelamin,
+                "umur" to umur,
+                "beratBadan" to beratBadan.toString(),
+                "tinggiBadan" to tinggiBadan.toString(),
+                "kadarGulaDarah" to kadarGulaDarah.toString(),
+                "tanggal" to currentDate,
                 "email" to userEmail,
-                "result" to result,
-                "physicalActivity" to physicalActivity, // Menyimpan aktivitas fisik
-                "lastMealTime" to lastMealTime, // Menyimpan jam terakhir makan
-                "ageCategory" to ageCategory // Menyimpan kategori umur
+                "hasil" to hasil, // Menyimpan hasil akhir
+                "aktivitasFisik" to aktivitasFisik, // Menyimpan aktivitas fisik
+                "jamTerakhirMakan" to jamTerakhirMakan, // Menyimpan jam terakhir makan
+                "kategoriUmur" to kategoriUmur, // Menyimpan kategori umur
+                "imt" to imt.toString(), // Menyimpan nilai IMT
+                "kategoriIMT" to kategoriIMT, // Menyimpan kategori IMT
+                "kategoriAktivitas" to kategoriAktivitas, // Menyimpan kategori aktivitas fisik
+                "kategoriJamTerakhirMakan" to kategoriJamTerakhirMakan // Menyimpan kategori jam terakhir makan
             )
 
             Log.d("CekActivity", "Data to be saved: $bloodSugarData")
@@ -222,7 +351,7 @@ class CekActivity : AppCompatActivity() {
                 .addOnSuccessListener {
                     Log.d("CekActivity", "Data successfully saved to Firebase")
                     // Data saved successfully, show the dialog
-                    showDialog(result)
+                    showDialog(hasil, kategoriUmur, hasilGulaDarah) // Kirim kategoriUmur dan hasilGulaDarah ke showDialog
                 }
                 .addOnFailureListener { exception ->
                     Log.e("CekActivity", "Failed to save data to Firebase", exception)
@@ -242,7 +371,7 @@ class CekActivity : AppCompatActivity() {
         }
     }
 
-    private fun showDialog(result: String) {
+    private fun showDialog(result: String, kategoriUmur: String, hasilGulaDarah: String) {
         val dialogView = layoutInflater.inflate(R.layout.layout_dialog_success, null)
         val tvMessage = dialogView.findViewById<TextView>(R.id.tv_message)
         tvMessage.text = result
@@ -257,6 +386,20 @@ class CekActivity : AppCompatActivity() {
                 finish() // Close CekActivity
             }
             .setNeutralButton(null, null)
+
+        // Tambahkan OnClickListener untuk tombol Artikel Edukasi
+        val btnArtikelEdukasi = dialogView.findViewById<Button>(R.id.btn_artikel_educasi)
+        btnArtikelEdukasi.setOnClickListener {
+            val intent = Intent(this, EdukasiActivity::class.java)
+            // Kirim data ke EdukasiActivity
+            intent.putExtra("isRemaja", kategoriUmur == "Remaja")
+            intent.putExtra("isDewasa", kategoriUmur == "Dewasa")
+            intent.putExtra("hasilGulaDarah", hasilGulaDarah) // Kirim hasil gula darah
+            Log.d("CekActivity", "isRemaja: ${kategoriUmur == "Remaja"}, hasilGulaDarah: $hasilGulaDarah")
+            Log.d("CekActivity", "isDewasa: ${kategoriUmur == "Dewasa"}, hasilGulaDarah: $hasilGulaDarah")
+            startActivity(intent)
+        }
+
 
         val titleView = layoutInflater.inflate(R.layout.layout_dialog_title, null)
         val titleTextView = titleView.findViewById<TextView>(R.id.dialogTitle)

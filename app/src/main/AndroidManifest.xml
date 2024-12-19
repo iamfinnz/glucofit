@@ -62,6 +62,9 @@
             android:name=".presentation.user.UserActivity"
             android:label="User Activity" />
         <activity
+            android:name=".presentation.edukasi.EdukasiActivity"
+            android:label="Edukasi Activity" />
+        <activity
             android:name=".presentation.changepassword.ChangePasswordActivity"
             android:label="Change Password Activity" />
 
